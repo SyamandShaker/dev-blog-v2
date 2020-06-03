@@ -1,0 +1,425 @@
+/* **** CSS RESET BY Eric Mayer ****
+-------------------------------------------------------------------------------------------- */
+/*#region RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
+form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,
+ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;
+font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,
+figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body
+{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,
+blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;
+border-spacing:0;box-sizing: border-box;}
+
+/* ** CODE GENERAL FOR ALL PAGES ** 
+-------------------------------------------------------------------------------------------- */
+/* ===== BODY ===== */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background: rgb(245,245,245);
+    color: #000;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: .6em;
+}
+
+/* ===== HEDAER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    margin: 0 auto;
+    padding: 1.6em 0;
+    top: 0;
+    align-items: center;
+    font-weight: 600;
+    background: linear-gradient(#000c40, #2c3e50, #3a6186);
+    box-shadow: 0px 0px 6px #777; /* #355675 */
+    transition: top 0.4s ease-in-out;
+}
+header a{
+    color: #e2ebf0;
+}
+.nav-up {
+    top: -5.8em;
+}
+/* **** LINKS **** */
+header>div{
+    font-size: 2em;
+    margin-left: 10%;
+} 
+header>nav {
+    font-size: 1.5em;
+    margin-right: 10%;
+}
+header>nav a{
+    margin-left: 20px;
+}
+header>nav a:hover {
+    color: #506169;
+    border-bottom: solid 2px #2c3e50;
+}
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+/* ===== MAIN ===== */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5.9em;
+    padding-top: .6em;
+}
+
+/* **** TITLES **** */
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 1.8em;
+    margin: .3em 0;
+    padding: .2em 0;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    font-size: .9em;
+    font-style: italic;
+    color: rgb(139, 154, 161);
+}
+h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #3a6186;
+}
+
+article{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 0 0 1.6em;
+}
+
+ol {
+    list-style-type: decimal;
+    margin: auto 15px;
+    padding: 10px 0;
+}
+
+ol>li {
+    padding: 5px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 0.6em 0;
+    background: linear-gradient(#000c40, #2c3e50, #3a6186);
+}
+
+footer>h3 {
+    font-size: 1em;
+    color: #e2ebf0;
+    margin: auto;
+    font-weight: normal;
+}
+
+/* HELPER CLASSES
+DRY - Don't repeat yourself !
+-------------------------------------------------------------------------------------------- */
+.img-styles {
+    display: block;
+    margin: 1.5em auto;
+    box-shadow: 0px 0px 8px 0.5px #111;
+    cursor: pointer;
+}
+.social a {
+    text-decoration: none;
+    color: #e2ebf0;
+    font-size: 1.8rem;
+    margin: 0 10px;
+}
+.language-git{
+    line-height: 1 !important;
+    font-size: .9em !important;
+}
+.language-javascript {
+    font-size: .95em !important;
+}
+.read-more {
+    padding: .2em 0;
+    margin-top: .3em;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    border: solid 1px #c7c7c7;
+}
+.read-more:hover{
+    background-color: #dadada;
+    border: solid 1px #a5a5a5;
+    width: 100%;
+    transition: .4s ease-in-out;
+}
+.read-more a {
+   display: flex;
+   justify-content: center;
+   color: #000c40; 
+   transition: .3s ease-in-out;
+   font-weight: 600;
+}
+.read-more>a:hover {
+    color: #b12a00;
+    font-size: 1.05em;
+    transition: .1s ease;
+}
+/* LAYOUT 
+-------------------------------------------------------------------------------------------- */
+/*#region **** my styles for home page **** */
+#home-page>main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#home-page>main .blog-section{
+    width: 70%;
+    margin: auto;
+    padding: 1em 0;
+}
+#home-page>main .section-centered {
+    background: linear-gradient(#000c40, #2c3e50, #3a6186);
+    /* background compatible with --->  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #e2ebf0;
+    box-shadow: 0 0 2px #111;
+}
+#home-page>main .section-centered .logo-centered {
+    display: flex;
+    height: 40em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6em;
+}
+#home-page>main h2 {
+    font-size: 2em;
+}
+#home-page>main .section-centered p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+#home-page>main img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #567694;
+}
+
+/* -------- Circle left and right --------- */
+.post-nav {
+    position: fixed;
+    top:50%;
+    margin-top: -16px;
+    font-size: 3em;
+}
+.post-nav a {
+    color: #737373;
+}
+.circle-left {
+    left: 4%;
+}
+.circle-right {
+    right: 4%;
+}
+
+/* -------- Menu Hamberger --------- */
+#hamburger-menu {
+    display: none;
+}
+/*#region **** my styles for about page **** */
+
+
+/*#region **** my styles for lists blog page **** */
+
+
+/*#region **** my styles for my blog-1 **** */
+
+
+/*#region **** my styles for my blog-2 **** */
+
+
+/*#region **** my styles for my blog-3 **** */
+
+
+/*#region **** my styles for my blog-4 **** */
+
+
+/*#region **** my styles for my blog-5 **** */
+#blog-5>main article section {
+    border: solid 3px #afafaf;
+    border-radius: 80px 5px;
+    background-color: #ececec;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+/* MEDIA QUERIES
+-------------------------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+    /*Hide the nav*/
+    #main-nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    /*Nav triggers*/
+    #hamburger-menu {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    #hamburger-menu,
+    #hamburger-menu a {
+        width: 45px;
+        height: 35px;
+        overflow: hidden;
+        margin-right: 5%;
+    }
+    #hamburger-menu a {
+        display: flex;
+        justify-content: center;
+    }
+    #hamburger-menu img {
+        background-color: #e2ebf0;
+        border-radius: .2em;
+    }
+    #hamburger-menu img:hover {
+        background-color: #9ba8b5;
+    }
+    .menu-is-open #open-menu {
+        display: none;
+    }
+
+    /* MOBILE NAV */
+    .menu-is-open {
+        overflow: hidden;
+    }
+    .menu-is-open #main-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    header #main-nav a {
+        color: rgb(226, 235, 240);
+        margin: .5em 0;
+        padding: .5em 0;
+        font-size: 2.5em;
+    }
+    header>div {
+        margin-left: 5%;
+    }
+    header #main-nav a {
+        font-size: 2em;
+    }
+    main {
+        width: 80%;
+    }
+    .img-styles {
+        width: 100%;
+        margin: 1.8em 0;
+    }
+    .post-nav{
+        font-size: 2.2em;
+    }
+    .circle-left {
+        left: 2%;
+    }
+    .circle-right {
+        right: 2%;
+    }
+}
+
+@media (max-width: 525px) {
+    header {
+        padding: 1.5em 0;
+    }
+    header>div {
+        margin-left: 5%;
+    }
+    header #main-nav a {
+        font-size: 1.5em;
+    }
+    main, #home-page>main .blog-section {
+        width: 75%;
+    }
+    #home-page>main .section-centered .logo-centered img {
+        width: 230px;
+    }
+}
+
+@media (max-width: 414px) {
+    header>div{
+        font-size: 1.8em;
+    }
+    #hamburger-menu, #hamburger-menu a {
+        width: 35px;
+        height: 30px;
+    }
+    .post-nav a {
+        font-size: .9em;
+    }
+    .circle-left {
+        left: 1%;
+    }
+    .circle-right {
+        right: 1%;
+    }
+}
+
+@media (max-width: 345px){
+    header{
+        padding: .8em 0;
+    }
+    header>div{
+        font-size: 1.4em;
+    }
+    #home-page>main {
+        text-align: center;
+    }
+    #home-page>main .section-centered .logo-centered {
+        height: 30em;
+    }
+    #home-page>main .section-centered .logo-centered img  {
+        width: 200px;
+    }
+    #home-page>main h2 {
+        font-size: 1.6em;
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <!-- PLUGINS PRISM-JS -->
+  <link rel="stylesheet" href="../assets/plugins/prism-js/prism.css">
+
+  <!--ICONMOON-->
+  <link rel="stylesheet" href="../assets/icons/style.css">
+
+  <!-- GOOGLE FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg" color="#444444">
+  <link rel="shortcut icon" href="../assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#eeeeee">
+  <meta name="msapplication-config" content="../assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#eeeeee">
+
+  <!-- CSS LINKS-->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+
+<body id="blog-3">
+  <header id="top-header" class="nav-down top-header">
+    <div>
+      <a href="../index.html"><h1>SYAMAND SHAKER</h1></a>
+    </div>
+    <figure id="hamburger-menu">
+        <a href="#" id="open-menu" class="trigger">
+            <img src="../assets/img/burger-icon.svg" alt="Burger menu">
+        </a>
+        <a href="#" id="close-menu" class="trigger">
+            <img src="../assets/img/close-icon.svg" alt="Close menu">
+        </a>
+    </figure>
+    <nav id="main-nav">
+        <a href="../about.html" title="About">About</a>
+        <a href="#" title="Posts">Posts</a>
+    </nav>
+</header>
+  <main>
+    <h2>Blog 3</h2>
+    <h4>Published 24.04.2020</h4>
+    <article>
+      <h3>Git-SCM</h3>
+      <p>Git is a distributed version control system that allows you to track changes in source code during software
+      development. It is designed to coordinate the work of programmers, but it can be used to track changes in any set
+      of files. Its goals are speed, data integrity, and support for distributed and non-linear workflows.</p>
+      <p>Git is easy to learn and has a small footprint with lightning-fast performance. It outperforms content management
+      tools such as Subversion, CVS, Perforce and ClearCase with features such as inexpensive local branches, convenient transit areas
+      and multiple workflows.</p>
+      <p>SCM {software configuration management } is a practice for tracking and controlling changes to development
+      software. It includes all the processes involved in building, packaging, and deploying software.</p>
+      <figure class="img-styles">
+        <img src="../assets/img/Blog-03/git-operations.png" alt="Git-operations">
+        <figcaption>Git Operations</figcaption>
+      </figure>
+      <p>Step 0 to check what we've changed with $ git status</p>
+      <pre>
+        <code class="language-git">   
+          <span style='color: #00ff0a;'>Syamand Shaker@W-SHAKERS-1</span> <span style='color: #da00ff;'>MINGW64</span> <span style='color: #FFEB3B;'> ~/POWERCODERS/dev-blog</span> <span style='color: #00e2ff;'>(gh-pages)</span>
+            $ git status
+            On branch gh-pages
+            Your branch is up to date with 'origin/gh-pages'.
+
+            Changes not staged for commit:
+              (use "git add file..." to update what will be committed)
+              (use "git restore file..." to discard changes in working directory)
+              <span style='color: #FF0000;'>
+                    modified:   about.html
+                    modified:   assets/css/styles.css
+                    modified:   assets/js/app.js
+                    modified:   index.html
+                    modified:   posts/post-template-1.html
+                    modified:   posts/post-template-10.html
+                    modified:   posts/post-template-2.html
+                    modified:   posts/post-template-3.html
+                    modified:   posts/post-template-4.html
+                    modified:   posts/post-template-5.html
+                    modified:   posts/post-template-6.html
+                    modified:   posts/post-template-7.html
+                    modified:   posts/post-template-8.html
+                    modified:   posts/post-template-9.html
+                    modified:   posts/post-template.html
+                </span>
+            no changes added to commit (use "git add" and/or "git commit -a")
+        </code>
+      </pre>
+      <p>Step 1 to publish our web page on GitHub with $ git add .</p>
+      <pre>
+        <code class="language-git">
+          <span style='color: #00ff0a;'>Syamand Shaker@W-SHAKERS-1</span> <span style='color: #da00ff;'>MINGW64</span> <span style='color: #FFEB3B;'> ~/POWERCODERS/dev-blog</span> <span style='color: #00e2ff;'>(gh-pages)</span>
+          $ git add .
+          warning: LF will be replaced by CRLF in posts/post-template-10.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-3.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-4.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-5.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-6.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-7.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-8.html.
+          The file will have its original line endings in your working directory
+          warning: LF will be replaced by CRLF in posts/post-template-9.html.
+          The file will have its original line endings in your working directory
+        </code>
+      </pre>
+      <p>Step 2 to publish our web page on GitHub with $ git commit -m "Description for what you changed"</p>
+      <pre>
+        <code class="language-git">
+          <span style='color: #00ff0a;'>Syamand Shaker@W-SHAKERS-1</span> <span style='color: #da00ff;'>MINGW64</span> <span style='color: #FFEB3B;'> ~/POWERCODERS/dev-blog</span> <span style='color: #00e2ff;'>(gh-pages)</span>
+          $ git commit -m "add my blog-3"
+          [gh-pages f2833ba] add my blog-3
+          15 files changed, 399 insertions(+), 126 deletions(-)
+        </code>
+      </pre>
+      <p>Step 3 to publish our web page on GitHub with $ git push</p>
+      <pre>
+        <code class="language-git">
+          <span style='color: #00ff0a;'>Syamand Shaker@W-SHAKERS-1</span> <span style='color: #da00ff;'>MINGW64</span> <span style='color: #FFEB3B;'> ~/POWERCODERS/dev-blog</span> <span style='color: #00e2ff;'>(gh-pages)</span>
+          $ git push
+          Enumerating objects: 41, done.
+          Counting objects: 100% (35/35), done.
+          Delta compression using up to 4 threads
+          Compressing objects: 100% (19/19), done.
+          Writing objects: 100% (21/21), 4.60 KiB | 1.15 MiB/s, done.
+          Total 21 (delta 15), reused 0 (delta 0), pack-reused 0
+          remote: Resolving deltas: 100% (15/15), completed with 8 local objects.
+          To https://github.com/SyamandShaker/dev-blog.git
+            d63f445..f2833ba  gh-pages -> gh-pages
+        </code>
+      </pre>
+    </article>
+    <div class="post-nav circle-left">
+      <a href="post-template-02.html" title="Previous blog"><span class="icon icon-circle-left"></span></a>
+    </div>
+    <div class="post-nav circle-right">
+      <a href="post-template-04.html" title="Next blog"><span class="icon icon-circle-right"></span></a>
+    </div>
+  </main>
+  <footer>
+    <h3>© 2020· Powered by Syamand Shaker</h3>
+  </footer>
+  <script>
+    const body = document.querySelector("body");
+    const openMenu = document.querySelector("#open-menu");
+    const closeMenu = document.querySelector("#close-menu");
+    
+    openMenu.addEventListener('click', function () {
+        body.classList.add('menu-is-open');
+    });
+    closeMenu.addEventListener('click', function () {
+        body.classList.remove('menu-is-open');
+    });
+  </script>
+  <script src="../assets/plugins/prism-js/prism.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
