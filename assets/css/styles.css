@@ -59,9 +59,10 @@ header a{
     top: -5.8em;
 }
 /* **** LINKS **** */
-header>div{
+header .logo{
     font-size: 2em;
     margin-left: 10%;
+    width: 8em;
 } 
 header>nav {
     font-size: 1.5em;
@@ -202,9 +203,10 @@ DRY - Don't repeat yourself !
     margin: 0;
 }
 #home-page>main .blog-section{
-    width: 70%;
+    width: 100%;
+    max-width: 960px;
     margin: auto;
-    padding: 1em 0;
+    padding: 1em 4%;
 }
 #home-page>main .section-centered {
     background: linear-gradient(#000c40, #2c3e50, #3a6186);
@@ -342,7 +344,7 @@ DRY - Don't repeat yourself !
         padding: .5em 0;
         font-size: 2.5em;
     }
-    header>div {
+    header .logo {
         margin-left: 5%;
     }
     header #main-nav a {
@@ -370,7 +372,7 @@ DRY - Don't repeat yourself !
     header {
         padding: 1.5em 0;
     }
-    header>div {
+    header .logo {
         margin-left: 5%;
     }
     header #main-nav a {
@@ -383,9 +385,8 @@ DRY - Don't repeat yourself !
         width: 230px;
     }
 }
-
 @media (max-width: 414px) {
-    header>div{
+    header .logo {
         font-size: 1.8em;
     }
     #hamburger-menu, #hamburger-menu a {
@@ -407,7 +408,7 @@ DRY - Don't repeat yourself !
     header{
         padding: .8em 0;
     }
-    header>div{
+    header .logo{
         font-size: 1.4em;
     }
     #home-page>main {
